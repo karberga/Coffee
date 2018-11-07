@@ -19,7 +19,6 @@ public class MorningRushTester
     JButton button = new JButton("Add Coffee");
     
     private static final int DELAY = 1000;
-
     
     public MorningRushTester()
     {    
@@ -43,7 +42,7 @@ public class MorningRushTester
             @Override
             public void actionPerformed(ActionEvent event)
             {
-                if (gulps >= 0)
+                if (gulps > 0)
                 {
                     System.out.println(gulps);
                 }
@@ -62,7 +61,7 @@ public class MorningRushTester
      Timer t = new Timer(DELAY, dc);
      t.start();
 
-     JOptionPane.showMessageDialog(null, "Make another?");
+     JOptionPane.showMessageDialog(null, "Just about to go to school.");
      System.exit(0);
     }
 
